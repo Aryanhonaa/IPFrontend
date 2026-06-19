@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-ds-text: #0f172a;
+  --color-ds-text-muted: #64748b;
+  --color-ds-border: #e2e8f0;
+  --color-ds-indigo-border: #c4b5fd;
+  --color-ds-indigo-bright: #7c3aed;
+  --color-ds-surface: #faf5ff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-slate-900 antialiased;
+  }
+}
